@@ -16,26 +16,23 @@
         <div
           class="text-base leading-6 font-semibold uppercase tracking-wider text-gray-300"
         >
-          Award winning support
+          {{ data.small_title }}
         </div>
         <h2
           class="mt-2 text-white text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10"
         >
-          We’re here to help
+          {{ data.main_title }}
         </h2>
         <p class="mt-3 text-lg leading-7 text-gray-300">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
-          tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim
-          et fermentum, augue. Aliquet amet volutpat quisque ut interdum
-          tincidunt duis.
+          {{ data.content }}
         </p>
         <div class="mt-8">
           <div class="inline-flex rounded-md shadow">
             <a
               class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-600 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-              href="#"
+              :href="data.button.link"
             >
-              <span>Visit the help center</span>
+              <span>{{ data.button.name }}</span>
               <svg
                 class="-mr-1 ml-3 h-5 w-5 text-gray-400"
                 viewBox="0 0 20 20"
@@ -56,5 +53,13 @@
   </div>
 </template>
 <script>
-export default {};
+import SectionOneData from "../data/sectionone.yml";
+export default {
+  name: "SectionOne",
+  data() {
+    return {
+      data: SectionOneData,
+    };
+  },
+};
 </script>

@@ -1,12 +1,19 @@
 navbar_link:
-  - name: 'Product'
-    link_value: 'http://www.google.com'
-  - name: 'Feature'
-    link_value: '#'
-  - name: 'Marketplace'
-    link_value: '#'
-  - name: 'Company'
-    link_value: '#'
-    
-main_heading_black : "Data to enrich your"
+  - name: "Product"
+    link_value: "http://www.google.com"
+  - name: "Feature"
+    link_value: "#"
+  - name: "Marketplace"
+    link_value: "#"
+  - name: "Company"
+    link_value: "#"
+
+main_heading_black: "Data to enrich your"
 main_heading_blue: "online business"
+sub_heading: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+main_button_one:
+  name: "Get started"
+  link_value: "#"
+main_button_two:
+  name: "Live demo"
+  link_value: "#"
