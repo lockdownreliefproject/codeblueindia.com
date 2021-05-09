@@ -77,13 +77,21 @@
             class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
           >
             <div class="flex items-center justify-between w-full md:w-auto">
-              <a href="#" aria-label="Home"
-                >
+              <a href="#" aria-label="Home">
                 <div class="flex flex-col">
-                <g-image style="top:8px;left:6px" class="relative self-end" width="20" src="~/assets/img/plus-symbol-button.svg"></g-image>
-                <p class="text-3xl tracking-tight leading-10 font-extrabold text-blue-500">CODE BLUE</p>
+                  <g-image
+                    style="top:8px;left:6px"
+                    class="relative self-end"
+                    width="20"
+                    src="~/assets/img/plus-symbol-button.svg"
+                  ></g-image>
+                  <p
+                    class="text-3xl tracking-tight leading-10 font-extrabold text-blue-500"
+                  >
+                    CODE BLUE
+                  </p>
                 </div>
-                </a>
+              </a>
               <div class="-mr-2 flex items-center md:hidden">
                 <button
                   class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
@@ -110,11 +118,14 @@
             </div>
           </div>
           <div class="hidden md:flex md:space-x-10">
-            
-              <a class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out" :href="link.link_value" :key="v" v-for="(link,v) in herosectiondata.navbar_link">
-                  {{link.name}}
-              </a>
-
+            <a
+              class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
+              :href="link.link_value"
+              :key="v"
+              v-for="(link, v) in herosectiondata.navbar_link"
+            >
+              {{ link.name }}
+            </a>
           </div>
         </nav>
       </div>
@@ -129,7 +140,6 @@
             aria-labelledby="main-menu"
           >
             <div class="px-5 pt-4 flex items-center justify-between">
-              
               <div class="-mr-2">
                 <button
                   class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
@@ -153,12 +163,15 @@
               </div>
             </div>
             <div class="px-2 pt-2 pb-3">
-                 <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" :href="link.link_value" :key="v" v-for="(link,v) in herosectiondata.navbar_link">
-                  {{link.name}}
+              <a
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                :href="link.link_value"
+                :key="v"
+                v-for="(link, v) in herosectiondata.navbar_link"
+              >
+                {{ link.name }}
               </a>
-           
             </div>
-        
           </div>
         </div>
       </div>
@@ -169,30 +182,30 @@
           <h2
             class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
           >
-            <span class="mr-1">{{herosectiondata.main_heading_black}}</span>
+            <span class="mr-1">{{ herosectiondata.main_heading_black }}</span>
             <br class="xl:hidden" />
-            <span class="text-blue-500">{{herosectiondata.main_heading_black}}</span>
+            <span class="text-blue-500">{{
+              herosectiondata.main_heading_blue
+            }}</span>
           </h2>
           <p
             class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
           >
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            {{ herosectiondata.sub_heading }}
           </p>
           <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <div class="rounded-md shadow">
               <a
                 class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-500 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-                href="#"
-                >Get started</a
+                :href="herosectiondata.main_button_one.link_value"
+                >{{ herosectiondata.main_button_one.name }}</a
               >
             </div>
             <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a
                 class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-600 bg-white hover:text-blue-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-                href="#"
-                >Live demo</a
+                :href="herosectiondata.main_button_two.link_value"
+                >{{ herosectiondata.main_button_two.name }}</a
               >
             </div>
           </div>
@@ -202,13 +215,13 @@
   </div>
 </template>
 <script>
-import HeroSectiondata from "../data/herosection.yml"
+import HeroSectiondata from "../data/herosection.yml";
 export default {
   name: "HeroSection",
-  data(){
-      return{
-          herosectiondata:HeroSectiondata
-      }
-  }
+  data() {
+    return {
+      herosectiondata: HeroSectiondata,
+    };
+  },
 };
 </script>
