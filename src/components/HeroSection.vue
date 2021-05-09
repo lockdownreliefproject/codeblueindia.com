@@ -110,34 +110,11 @@
             </div>
           </div>
           <div class="hidden md:flex md:space-x-10">
-            <a
-              class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-              href="#"
-              >Product</a
-            ><a
-              class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-              href="#"
-              >Features</a
-            ><a
-              class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-              href="#"
-              >Marketplace</a
-            ><a
-              class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out"
-              href="#"
-              >Company</a
-            >
-          </div>
-          <div
-            class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"
-          >
-            <span class="inline-flex rounded-md shadow"
-              ><a
-                class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-blue-600 bg-white hover:text-blue-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-blue-700 transition duration-150 ease-in-out"
-                href="#"
-                >Log in</a
-              ></span
-            >
+            
+              <a class="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out" :href="link.link_value" :key="v" v-for="(link,v) in herosectiondata.navbar_link">
+                  {{link.name}}
+              </a>
+
           </div>
         </nav>
       </div>
@@ -152,13 +129,7 @@
             aria-labelledby="main-menu"
           >
             <div class="px-5 pt-4 flex items-center justify-between">
-              <div>
-                <img
-                  class="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/v1/workflow-mark-on-white.svg"
-                  alt=""
-                />
-              </div>
+              
               <div class="-mr-2">
                 <button
                   class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
@@ -182,36 +153,12 @@
               </div>
             </div>
             <div class="px-2 pt-2 pb-3">
-              <a
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                href="#"
-                role="menuitem"
-                >Product</a
-              ><a
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                href="#"
-                role="menuitem"
-                >Features</a
-              ><a
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                href="#"
-                role="menuitem"
-                >Marketplace</a
-              ><a
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
-                href="#"
-                role="menuitem"
-                >Company</a
-              >
+                 <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" :href="link.link_value" :key="v" v-for="(link,v) in herosectiondata.navbar_link">
+                  {{link.name}}
+              </a>
+           
             </div>
-            <div>
-              <a
-                class="block w-full px-5 py-3 text-center font-medium text-blue-600 bg-gray-50 hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:bg-gray-100 focus:text-blue-700 transition duration-150 ease-in-out"
-                href="#"
-                role="menuitem"
-                >Log in</a
-              >
-            </div>
+        
           </div>
         </div>
       </div>
@@ -222,9 +169,9 @@
           <h2
             class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl"
           >
-            <span class="mr-1">Data to enrich your</span>
+            <span class="mr-1">{{herosectiondata.main_heading_black}}</span>
             <br class="xl:hidden" />
-            <span class="text-blue-500">online business</span>
+            <span class="text-blue-500">{{herosectiondata.main_heading_black}}</span>
           </h2>
           <p
             class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
@@ -255,7 +202,13 @@
   </div>
 </template>
 <script>
+import HeroSectiondata from "../data/herosection.yml"
 export default {
   name: "HeroSection",
+  data(){
+      return{
+          herosectiondata:HeroSectiondata
+      }
+  }
 };
 </script>
