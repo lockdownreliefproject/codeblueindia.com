@@ -1,0 +1,14 @@
+faqs_left:
+  - question_name: " Whats the best thing about Switzerland?1 "
+    answer: " I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
+  - question_name: " Whats the best thing about Switzerland?2 "
+    answer: " I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
+  - question_name: " Whats the best thing about Switzerland?3 "
+    answer: " I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
+faqs_right:
+  - question_name: " Whats the best thing about Switzerland? 4"
+    answer: " I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
+  - question_name: " Whats the best thing about Switzerland? 5"
+    answer: " I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."
+  - question_name: " Whats the best thing about Switzerland? 6"
+    answer: " I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat."

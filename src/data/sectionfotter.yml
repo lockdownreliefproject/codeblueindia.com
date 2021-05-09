@@ -1,0 +1,9 @@
+fotter_link:
+  - name: 'Product'
+    link_value: 'http://www.google.com'
+  - name: 'Feature'
+    link_value: '#'
+  - name: 'Marketplace'
+    link_value: '#'
+  - name: 'Company'
+    link_value: '#'
