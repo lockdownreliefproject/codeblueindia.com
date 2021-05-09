@@ -1,8 +1,17 @@
 <template>
-  <div class="text-gray-900">
+  <div>
+
+
+
+    <HeroSection></HeroSection>
+    <SectionOne></SectionOne>
+    <SectionTwo></SectionTwo>
+    <SectionThree></SectionThree>
+    <SectionFourFaq></SectionFourFaq>
+    <SectionFotter></SectionFotter>
 
     <!-- Header & Navigation -->
-    <header class="p-6 flex flex-col md:flex-row items-center justify-between text-center">
+    <!-- <header class="p-6 flex flex-col md:flex-row items-center justify-between text-center">
       <strong>
         <g-link to="/" class="text-2xl">{{ $static.metadata.siteName }}</g-link>
       </strong>
@@ -10,15 +19,34 @@
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/blog/">Blog</g-link>
       </nav>
-    </header>
+    </header> -->
 
     <!-- Page Content -->
-    <main class="p-6">
+    <!-- <main class="p-6">
       <slot/>
-    </main>
+    </main> -->
 
   </div>
 </template>
+<script>
+import HeroSection from '@/components/HeroSection'
+import SectionOne from '@/components/SectionOne'
+import SectionTwo from '@/components/SectionTwo'
+import SectionThree from '@/components/SectionThree'
+import SectionFourFaq from '@/components/SectionFourFaq'
+import SectionFotter from '@/components/SectionFotter'
+
+export default {
+    components:{
+      HeroSection,
+      SectionOne,
+      SectionTwo,
+      SectionThree,
+      SectionFourFaq,
+      SectionFotter
+    }
+}
+</script>
 
 <static-query>
 query {
@@ -33,5 +61,8 @@ query {
 
 .active--exact { /* Active Nav Link */
   @apply text-gray-900;
+}
+.code_blue_text{
+  color: #27a1d8;
 }
 </style>
