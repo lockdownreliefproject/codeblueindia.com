@@ -1,6 +1,6 @@
 # Minimal Gridsome Starter with TailwindCSS + Markdown
 
-This starter is very simple, it's just meant to skip the setup of Gridsome as a Static Site + CMS. It's using TailwindCSS, as well as Markdown for the site content. 
+This starter is very simple, it's just meant a to skip the setup of Gridsome as a Static Site + CMS. It's using TailwindCSS, as well as Markdown for the site content. 
 
 There are two example posts in the `content/posts` folder, a template for Blog Posts (as well as blog feed items), and some simple meta tag examples in the blog post template.
 
