@@ -1,19 +1,22 @@
 navbar_link:
-  - name: "Kartik"
+  - name: "FAQs"
     link_value: "http://www.google.com"
-  - name: "Feature"
+  - name: "About LRP"
     link_value: "#"
-  - name: "Marketplace"
+  - name: "Competition Rules"
     link_value: "#"
-  - name: "Company"
+  - name: "Mfr Sign Up Rules"
     link_value: "#"
 
-main_heading_black: "Data to enrich your"
-main_heading_blue: "online business"
-sub_heading: "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
+main_heading_black: "Make An Affordable"
+main_heading_blue: "Oxygen Generator"
+sub_heading: "The Lockdown Relief Project (LRP), is calling on all innovators,
+entrepreneurs, designers, creative heads, science enthusiasts, everyone, to rise to the
+biggest challenge of our times. Develop a working prototype in 21 days and the best prototype
+stands to win a prize of Rs. 5 lakhs!"
 main_button_one:
-  name: "Get started"
-  link_value: "#"
+  name: "Register Here"
+  link_value: "https://forms.gle/Eo1bMY6GSB5MZZ5Z8"
 main_button_two:
-  name: "Live demo"
-  link_value: "#"
+  name: "Manufacturers SignUp"
+  link_value: "https://forms.gle/WhyCyjb1LYRhZqGs7"
